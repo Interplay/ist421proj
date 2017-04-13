@@ -58,6 +58,6 @@ while os.path.exists("CustOrder%s.txt" % i):
     o += 1
 
 fh = open("CustOrder%s.txt" % i, "w")
-rs = ("\n"+name+"has spent a total of "+ str(custspend) +"on Order Number: %s" %o+ "\n")
+rs = ("\n"+name+"has spent a total of $"+ str(custspend) +" on Order Number: %s" %o+ "\n")
 fh.writelines(rs)
 fh.close()
